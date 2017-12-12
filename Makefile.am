@@ -10,6 +10,7 @@ TOOLS =		memcheck \
 		lackey \
 		none \
 		helgrind \
+		exp-failgrind \
 		drd
 
 EXP_TOOLS = 	exp-sgcheck \

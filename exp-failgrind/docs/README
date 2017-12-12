@@ -1,0 +1,10 @@
+This first try is based on the none tool and I have implemented only to fail malloc, open, read, write, fopen, socket, send recv and bind functions.
+
+Failgrind support theses options:
+--failfunc for selecting which functions may fail. Example: --failfunc=malloc,open
+--failclass for selecting a whole class of functions which may fail. Example --failclass=1 for failing open,read,write
+--percent for choosing the percentage of function that will fail.
+
+Example:
+valgrind --tool=exp-failgrind --percent=90 --failfunc=all ls
+This command will launch ls and each function call have 90% chance to fail.

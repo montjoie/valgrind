@@ -4499,6 +4499,8 @@ AC_CONFIG_FILES([
    callgrind/callgrind_annotate
    callgrind/callgrind_control
    callgrind/tests/Makefile
+   exp-failgrind/Makefile
+   exp-failgrind/tests/Makefile
    helgrind/Makefile
    helgrind/tests/Makefile
    massif/Makefile
